@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- Sign up page top icon -->
+    <ImageView
+        android:id="@+id/iv_depi_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/depi_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"/>
+
+    <!-- Create your account text -->
+    <TextView
+        android:id="@+id/tv_account_creation_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your Account"
+        android:layout_marginStart="30dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <!-- Email Text Field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:hint="Email" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Password Text Field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Confirm Password Text Field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:hint="Confirm Password"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Sign up button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Sign up"
+        android:textSize="20sp"
+        app:cornerRadius="12dp"/>
+
+
+    <!-- Sign up with text -->
+    <TextView
+        android:id="@+id/tv_sign_up_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or sign up with"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp" />
+
+    <!-- Sign up with icons container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <!-- Sign up with google -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_google_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:icon="@drawable/google"
+            app:iconGravity="textStart"
+            app:iconTint="@null"
+            app:iconPadding="0dp"
+            android:layout_margin="16dp"
+            app:cornerRadius="12dp"
+            app:iconSize="40dp" />
+
+        <!-- Sign up with facebook -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_facebook_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:icon="@drawable/facebook"
+            app:iconGravity="textStart"
+            app:iconTint="@null"
+            app:iconPadding="0dp"
+            android:layout_margin="16dp"
+            app:cornerRadius="12dp"
+            app:iconSize="40dp" />
+
+        <!-- Sign up with twitter -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_twitter_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:icon="@drawable/twitter"
+            app:iconGravity="textStart"
+            app:iconTint="@null"
+            app:iconPadding="0dp"
+            android:layout_margin="16dp"
+            app:cornerRadius="12dp"
+            app:iconSize="40dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
